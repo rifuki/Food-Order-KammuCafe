@@ -1,0 +1,60 @@
+Project ini telah dihosting ke url = http://34.128.65.76/ (admin dan customer) atau www.kammucafe.site (customer saja).
+Link implementasi barcode : http://34.128.65.76?table=1 (meja nomor 1), http://34.128.65.76?table=2 (meja nomor 2), dst
+
+Semua library didalam project ini dibangun menggunakan bahasa pemrograman javascript dengan teknologi database MongoDB, framework Express, frontend ReactJS, dan backend NodeJS.
+
+-- Pastikan komputer sudah terinstal NodeJS versi 16 dan MongoDB serta terhubung dengan internet --
+
+Link Download = {
+ NodeJS : "https://nodejs.org/en/download/",
+ MongoDB : "https://www.mongodb.com/try/download/community",
+ MongoDB_Tools : "https://www.mongodb.com/try/download/database-tools" (wajib untuk pengguna windows digunakan untuk mengimport database)
+}
+
+Untuk pengguna windows wajib mendaftarkan folder atau path "C:\Program Files\MongoDB\Server\5.0\bin" dan "C:\Program Files\MongoDB\Tools\100\bin" kedalam enviroment variables dengan cara :
+1. sudah menginstall MongoDB dan MongoDB Tools
+2. pencet tombol windows + x, kemudian pilih system.
+3. pilih Advanced System settings.
+4. pilih Environment Variables
+5. pilih Path pada System variables kemudian tekan edit
+6. klik new kemudian tempelkan direktori "C:\Program Files\MongoDB\Server\5.0\bin" (sesuaikan dengan versi MongoDB yang digunakan seperti contoh (5.0) ) kemudian tekan enter.
+7. klik new lagi kemudian tempelkan direktori "C:\Program Files\MongoDB\Tools\100\bin" kemudian tekan enter.
+8. setelah selesai tekan ok kemudian ok - ok hingga keluar dari System Properties.
+9. untuk mengetes mongodb sudah terinstall yakni dengan membuka cmd kemudian ketikkan "mongoexport" jika menampilkan "must specify a collection", kemudian mengetikkan "mongo" lalu menampilkan mongoshell menandakan penginstallan MongoDB dan MongoDB Tools telah berhasil.
+10. untuk keluar dari mongoshell ketikkan "exit" kemudian bisa melanjutkkan ketahap menjalankan reactjs.
+
+Cara import atau restore database db_kammucafe ke komputer : 
+1. buka cmd/terminal.
+2. masuk ke directory "Food-Order-KammuCafe/database".
+3. import database menggunakan perintah : "mongorestore --db db_kammucafe --verbose db_kammucafe".
+4. jika sukses maka akan menampilkan "18 document(s) restored successfully. 0 document(s) failed to restore."
+
+Cara menjalankan webserver sisi client / frontend :
+1. masih di cmd/terminal.
+2. masuk ke directory "Food-Order-KammuCafe/client".
+3. jalankan perintah "npm cache clean --force" untuk membersihkan cache.
+4. install terlebih dahulu modules yang dibutuhkan ReactJS dengan menggunakan perintah "npm install", tunggu hingga selesai instalasi node_modulesnya.
+5. terakhir jalankan perintah "npm start" untuk menjalankan ReactJS.
+6. jika sukses maka secara otomatis akan terbuka browser yang mengarah ke halaman localhost dan menampilakan website tanpa terhubung ke server backend.
+7. pastikan cmd/terminalnya tidak tertutup.
+Info lebih lanjut tentang cara menjalankan ReactJs bisa dilihat di Food-Order-Kammucafe/client/README.md
+
+Cara menjalankan webserver sisi server / backend : 
+1. buka cmd/terminal baru.
+2. masuk ke directory "Food-Order-KammuCafe/server".
+3. jalankan perintah "npm cache clean --force" untuk membersihkan cache.
+4. install terlebih dahulu modules yang dibutuhkan NodeJS dengan menggunakan perintah "npm install", tunggu hingga selesai instalasi node_modulesnya.
+5. terakhir jalankan perintah "npm start" untuk menjalankan server NodeJSnya.
+6. jika sukses maka akan menampilkan "Server is beating on port 3001 dan Database Connected" pada cmd/terminal.
+7. pastikan cmd/terminalnya juga tidak tertutup.
+
+Cara mengakses website Food-Order-KammuCafe :
+1. buka browser.
+2. ketik http://localhost pada alamat url di browser.
+3. Jika sukses maka akan muncul tampilan websitenya.
+
+//Admin
+Untuk masuk ke halaman admin kammucafe tambahkan /admin diakhir url atau pergi ke http://localhost/admin, kemudian isikan akun dengan :
+username = admin
+password = admin
+
