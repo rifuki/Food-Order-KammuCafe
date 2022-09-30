@@ -1,5 +1,5 @@
-Project ini telah dihosting ke url = http://34.128.65.76/ (admin dan customer) atau www.kammucafe.site (customer saja).
-Link implementasi barcode : http://34.128.65.76?table=1 (meja nomor 1), http://34.128.65.76?table=2 (meja nomor 2), dst
+Project ini telah dihosting ke url = http://34.101.179.245/ (admin dan customer) atau www.kammucafe.site (customer saja).
+Link implementasi barcode : http://34.101.179.245?table=1 (meja nomor 1), http://34.101.179.245?table=2 (meja nomor 2), dst
 
 Semua library didalam project ini dibangun menggunakan bahasa pemrograman javascript dengan teknologi database MongoDB, framework Express, frontend ReactJS, dan backend NodeJS.
 
